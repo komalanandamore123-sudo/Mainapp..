@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tom and Jerry - The Timeless Chase</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 100vh;
+        background: url("https://upload.wikimedia.org/wikipedia/en/f/f6/Tom_and_Jerry.png") no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+        font-size: 4rem;
+        z-index: 1;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        z-index: 1;
+        animation: fadeIn 4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    section {
+        padding: 80px 10%;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #ff4e50;
+    }
+
+    .story {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .characters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        width: 300px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: 0.4s;
+    }
+
+    .card:hover {
+        transform: translateY(-15px);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .card h3 {
+        margin-top: 15px;
+        color: #ff4e50;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    @media(max-width: 768px){
+        header h1 {
+            font-size: 2.5rem;
+        }
+        .characters {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Tom & Jerry</h1>
+        <p>The Legendary Cat and Mouse Chase</p>
+    </div>
+</header>
+
+<section>
+    <h2>Their Story</h2>
+    <p class="story">
+        Tom and Jerry is one of the most iconic animated series ever created. 
+        The show revolves around Tom, the mischievous house cat, and Jerry, 
+        the clever little mouse who constantly outsmarts him. 
+        Their endless chase is filled with humor, creativity, and chaotic fun.
+        <br><br>
+        Despite their rivalry, there are moments when Tom and Jerry show friendship 
+        and teamwork — proving that even the biggest rivals can sometimes be allies.
+        Since its debut in 1940, the cartoon has entertained generations with 
+        slapstick comedy, expressive animation, and timeless storytelling.
+    </p>
+</section>
+
+<section>
+    <h2>Meet the Characters</h2>
+    <div class="characters">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/TomCat.png" alt="Tom">
+            <h3>Tom</h3>
+            <p>
+                Tom is a determined yet often unlucky cat who constantly 
+                tries to catch Jerry. His dramatic reactions and hilarious 
+                failures make him unforgettable.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt="Jerry">
+            <h3>Jerry</h3>
+            <p>
+                Jerry is a smart, quick, and playful mouse. 
+                He always finds clever ways to outwit Tom, 
+                turning every chase into a comic masterpiece.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Why We Love Them</h2>
+    <p class="story">
+        What makes Tom and Jerry special is their universal humor. 
+        With little to no dialogue, their expressive actions 
+        make people of all languages and ages laugh. 
+        Their timeless rivalry continues to inspire new movies, 
+        shows, and fans across the world.
+    </p>
+</section>
+
+<footer>
+    © 2026 Tom & Jerry Fan Page | Made with ❤️ using HTML & CSS
+</footer>
+
+</body>
+</html>
